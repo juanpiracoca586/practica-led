@@ -3,11 +3,14 @@ import time
 
 led1 = Pin(15, Pin.OUT)
 led2 = Pin(14, Pin.OUT)
+led3 = Pin(16, Pin.OUT)
 while True:
     led1.on()
     led2.off()
+    led3.off()
 
     time.sleep(1)
     led1.off()
     led2.on()
+    led3.on()
     time.sleep(1)
